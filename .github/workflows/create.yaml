@@ -1,0 +1,14 @@
+name: Terraform ec2 creation
+on: workflow_dispatch
+jobs:
+    create-runner:
+        runs-on: ubuntu-latest
+        steps:
+          - name: check out the repo code
+            run: actions/checkout@v6
+
+          - name: list files
+            run: ls -l
+            
+
+
